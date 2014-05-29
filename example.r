@@ -9,6 +9,8 @@ d <- data.frame(`id`    = as.character(seq(1, 1000)),
                 `site`  = sample(c('AAA', 'BBB', 'CCC', 'DDD'), size=1000, 
                                  replace=TRUE),
                 `age`   = rnorm(n=1000, mean=50,  sd=5),
+                `sex`   = sample(c('Male', 'Female'), size=1000,
+                                 replace=TRUE),
                 `height`= rnorm(n=1000, mean=72,  sd=10),
                 `weight`= rnorm(n=1000, mean=150, sd=10))
 
