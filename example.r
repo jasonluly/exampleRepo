@@ -1,6 +1,10 @@
 # ----------------------------------------------------------------------------- 
 # Let's create some data and plot it in R 
 # -----------------------------------------------------------------------------
+
+# to install contributed packages :
+# install.packages(c('plyr','ggplot2'),
+#                  repos='http://watson.nci.nih.gov/cran_mirror/')
 library(plyr)
 library(ggplot2)
 
