@@ -23,9 +23,18 @@ table1 <- ddply(d, .(site), summarise,
                   height=tempFunction(height),
                   weight=tempFunction(weight))
 
-# plot data
+# plot data - age
 p <- ggplot(data=d)
 p <- p + geom_histogram(aes(x=age), binwidth=1)
 p <- p + facet_grid(site ~ .)
 print(p)
+
+# plot data - sex
+p <- ggplot(data=d)
+p <- p + geom_bar(aes(x=sex))
+p <- p + facet_grid(site ~ .)
+print(p)
+
+
+
 
